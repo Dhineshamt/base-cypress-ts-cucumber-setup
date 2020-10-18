@@ -9,7 +9,7 @@ Cypress.Commands.add('searchGoogle', searchGoogle);
 declare global {
   namespace Cypress {
     interface Chainable {
-      searchGoogle: typeof searchGoogle 
+      searchGoogle: typeof searchGoogle;
     }
   }
 }

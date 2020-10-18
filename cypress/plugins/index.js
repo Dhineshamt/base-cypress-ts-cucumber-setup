@@ -15,7 +15,7 @@ module.exports = (on, config) => {
 
   on("file:preprocessor", preprocess);
 
-  const targetEnv = config.env.TARGET_ENV || 'qa';
+  const targetEnv = config.env.TARGET_ENV || 'prod';
 
   const environmentConfig = require(`./config/${targetEnv}`);
 

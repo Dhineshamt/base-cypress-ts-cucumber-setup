@@ -7,9 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "cypress:open": "$(npm bin)/cypress open",
-    "cypress:open:prod": "$(npm bin)/cypress open -e TARGET_ENV=prod",
-    "cypress:run:prod": "$(npm bin)/cypress run -e TARGET_ENV=prod"
+    "cypress:open": "cypress open",
+    "cypress:open:prod": "cypress open -e TARGET_ENV=prod",
+    "cypress:run:prod": "cypress run -e TARGET_ENV=prod"
   },
   "private": true,
   "dependencies": {
@@ -51,7 +51,8 @@
     "ts-loader": "^6.2.1",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
-    "typescript": "~3.2.2"
+    "typescript": "~3.2.2",
+    "webpack": "4.44.2"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
