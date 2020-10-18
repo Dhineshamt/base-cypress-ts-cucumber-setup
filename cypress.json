@@ -1,3 +1,18 @@
 {
-  "testFiles": "**/*.feature"
+  "$schema": "https://on.cypress.io/cypress.schema.json",
+  "testFiles": "**/*.feature",
+  "ignoreTestFiles": ["*.js","*.md"],
+  "defaultCommandTimeout": 40000,
+  "pageLoadTimeout": 100000,
+  "watchForFileChanges": true,
+  "screenshotOnRunFailure": true,
+  "trashAssetsBeforeRuns": true,
+  "video": true,
+  "videoUploadOnPasses": false,
+  "fixturesFolder": "cypress/fixtures",
+  "integrationFolder": "cypress/integration",
+  "pluginsFile": "cypress/plugins/index.js",
+  "screenshotsFolder": "cypress/reports/screenshots",
+  "videosFolder": "cypress/reports/videos",
+  "supportFile": "cypress/support/index.js"
 }

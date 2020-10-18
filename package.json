@@ -37,6 +37,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "~4.5.0",
+    "cucumber-html-reporter": "^5.2.0",
     "cypress": "^3.6.1",
     "cypress-cucumber-preprocessor": "^1.16.2",
     "jasmine-core": "~2.99.1",
@@ -53,6 +54,13 @@
     "typescript": "~3.2.2"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/integration/",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/reports/cucumber.json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
   }
 }
